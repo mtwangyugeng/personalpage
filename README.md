@@ -5,7 +5,7 @@ Personal Page
 Try It
 ---
 
-[mtwangyugeng.github.io/peronalpage](https://mtwangyugeng.github.io/peronalpage)
+[mtwangyugeng.github.io/personalpage](https://mtwangyugeng.github.io/personalpage)
 
 
 
