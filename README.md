@@ -1,4 +1,4 @@
-BeatBox
+Personal Page
 ---
 <img src="title_logo.png" width="60%" height="60%" />
 
