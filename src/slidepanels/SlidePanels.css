@@ -1,0 +1,22 @@
+.SlidePanels-container{
+    height: 90vmin;
+    width: 90vmin;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.SlidePanels-main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sliderbutton{
+    height: fit-content;
+    border-radius: 50%;
+    height: 5vmin;
+    width: 5vmin;
+    align-self: center;
+}

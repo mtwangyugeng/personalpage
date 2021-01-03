@@ -1,0 +1,9 @@
+.OnePanel-container{
+    /* background-color: blue; */
+    width: 90%;
+    height: 90%;
+    margin: 1vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

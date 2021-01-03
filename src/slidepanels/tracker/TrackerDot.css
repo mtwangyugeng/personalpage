@@ -1,0 +1,14 @@
+.TrackerDot{
+    border-radius: 50%;
+    width: 3vmin;
+    height: 3vmin;
+    margin: 1vmin;
+}
+
+.TrackerDot-off{
+    background-color: blue;
+}
+
+.TrackerDot-on{
+    background-color: crimson;
+}

@@ -5,7 +5,7 @@ export default class SpeedChanger extends React.Component{
     /**
      * As a connection bar, I:
      *  - put a bar in the container with websites logos.
-     *  - recieves http addresses from @props and link them
+     *  - recieve http addresses from @props and link them
      *      to the corresponding logos.
      * I support: 
      *  -this.props.linkedin

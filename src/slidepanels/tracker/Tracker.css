@@ -1,0 +1,7 @@
+.Tracker-container{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 3vmin;
+}
