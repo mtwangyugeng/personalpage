@@ -5,7 +5,14 @@
     margin: auto;
     display: flex;
     flex-direction: row;
+    /* position: fixed;
+    bottom: 0; */
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+  }
 
 .icons{
     height: 100%;
