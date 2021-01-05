@@ -27,6 +27,16 @@ export default class SpeedChanger extends React.Component{
     componentDidMount(){
         var header = document.getElementById("sticktop");
         this.sticky = header.offsetTop;
+        window.onresize = () => {
+            this.setState({
+                stick: ""
+            })
+            this.sticky = header.offsetTop;
+            if(window.pageYOffset > this.sticky) 
+                this.setState({
+                    stick: "sticky"
+                })
+        }
         window.onscroll = this.stick_it;
     }
 
