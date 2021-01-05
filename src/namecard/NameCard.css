@@ -1,0 +1,9 @@
+.NameCard-container{
+    background-color: blue;
+    height: 30vmin;
+    width: 60vmin;
+    border-radius: 5%;
+    margin: auto;
+    margin-bottom: 2vmin;
+    margin-top: 2vmin;
+}

@@ -3,6 +3,7 @@
     width: 3vmin;
     height: 3vmin;
     margin: 1vmin;
+    cursor: pointer;
 }
 
 .TrackerDot-off{

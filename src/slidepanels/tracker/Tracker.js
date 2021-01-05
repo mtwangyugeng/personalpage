@@ -25,7 +25,8 @@ export default class Tracker extends React.Component{
         var finale = []
         for(i = 0; i <= this.props.last_index; i++)
             finale.push(<TrackerDot mypanelnum = {i} 
-                currentpanel = {this.props.currentpanel}/>)
+                currentpanel = {this.props.currentpanel}
+                go_to_slide = {this.props.go_to_slide}/>)
         return finale
     }
 

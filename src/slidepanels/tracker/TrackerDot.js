@@ -13,12 +13,17 @@ export default class TrackerDot extends React.Component{
 
     render() {
         return ( 
-            <div className = 
+            <div onClick = {this.go_to_slide} className = 
                 {"TrackerDot " + this.css_classes[this.props.mypanelnum === this.props.currentpanel ? 1 : 0]}>
                     {/* {this.props.mypanelnum === this.props.currentpanel ? 1 : 0} */}
             </div>
         );
     }
+
+    go_to_slide = () => {
+        this.props.go_to_slide(this.props.mypanelnum)
+    }
+
     
 }
 

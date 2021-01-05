@@ -4,6 +4,9 @@
     display: flex;
     flex-direction: column;
     margin: auto;
+    background-color: white;
+    border-radius: 10%;
+    margin-top: 2vmin;
 }
 
 .SlidePanels-main{
@@ -19,4 +22,5 @@
     height: 5vmin;
     width: 5vmin;
     align-self: center;
+    cursor: pointer;
 }

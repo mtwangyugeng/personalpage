@@ -12,6 +12,7 @@ export default class SlidePanels extends React.Component{
      *      that is showing.
      *  - can keep track, and present visually, on which panel
      *      is currently on display.
+     *  - can go to a slide directly by clicking on the trackers
      *  - recieve an list of contents in jsx from @props
      * I support: 
      *  -this.props.contents
@@ -30,9 +31,15 @@ export default class SlidePanels extends React.Component{
                     <OnePanel content = {this.props.contents[this.state.currentpanel]}/>
                     <button className = "sliderbutton" onClick = {this.slide_right}>{">"}</button>
                 </div>
-                <Tracker last_index = {this.last_index} currentpanel = {this.state.currentpanel}/>
+                <Tracker last_index = {this.last_index} currentpanel = {this.state.currentpanel}  go_to_slide = {this.go_to_slide}/>
             </div>
         );
+    }
+
+    go_to_slide = (mypanelnum) => {
+        this.setState({
+            currentpanel: mypanelnum
+        })
     }
 
     slide_left = () => {
