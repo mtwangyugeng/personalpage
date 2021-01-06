@@ -14,12 +14,13 @@ export default class NameCard extends React.Component{
         loading: true,
         error: null, 
 
+        show: ""
     }
     data = null
 
     render() {
         return ( 
-            <div className = "NameCard-container">
+            <div className = {"NameCard-container " + this.state.show}>
                 {this.render_putin()}
             </div>
         );
@@ -33,7 +34,7 @@ export default class NameCard extends React.Component{
             .then((jsondata) => {this.data = jsondata})
             .then(() => this.setState({loading: false}))
             .catch((e) => this.setState({error: e}));
-
+        this.setState({show: "NameCard-container-show"})    
     }
 
     render_putin = () => {
