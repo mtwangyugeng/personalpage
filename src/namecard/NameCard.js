@@ -6,6 +6,8 @@ export default class NameCard extends React.Component{
      * As a NameCard, I:
      *  - Display basic infomation based on
      *      the github login given
+     *  - Open a new tab to display the login's
+     *      github page
      * I support: 
      *  -this.props.login
      */
@@ -34,7 +36,8 @@ export default class NameCard extends React.Component{
             .then((jsondata) => {this.data = jsondata})
             .then(() => this.setState({loading: false}))
             .catch((e) => this.setState({error: e}));
-        this.setState({show: "NameCard-container-show"})    
+
+        this.setState({show: "NameCard-container-show"})
     }
 
     render_putin = () => {
@@ -43,7 +46,7 @@ export default class NameCard extends React.Component{
         if(!this.data) return null;
         return (
             <>
-                <img className = "profile-pic" alt = {this.data.login} src = {this.data.avatar_url} />
+                <img className = "profile-pic" alt = {this.data.login} src = {this.data.avatar_url} onClick = {() => window.open(this.data.html_url)}/>
                 <div className = "profile-info">
                     <h2>{this.data.name}</h2>
                     <p>{this.data.login}</p>
