@@ -24,12 +24,12 @@ export default class SlidePanels extends React.Component{
     last_index = this.props.contents.length - 1
 
     render() {
-        return ( 
+        return (
             <div className = "SlidePanels-container">
                 <div className = "SlidePanels-main">
-                    <button className = "sliderbutton" onClick = {this.slide_left}>{"<"}</button>
+                    <div className = "sliderbutton" onClick = {this.slide_left}>{"←"}</div>
                     <OnePanel content = {this.props.contents[this.state.currentpanel]}/>
-                    <button className = "sliderbutton" onClick = {this.slide_right}>{">"}</button>
+                    <div className = "sliderbutton" onClick = {this.slide_right}>{"→"}</div>
                 </div>
                 <Tracker last_index = {this.last_index} currentpanel = {this.state.currentpanel}  go_to_slide = {this.go_to_slide}/>
             </div>

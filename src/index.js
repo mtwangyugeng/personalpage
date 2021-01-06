@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import ConnectionBar from './connectionbar/ConnectionBar'
 
-import SlidePanels from './slidepanels/SlidePanels'
 import NameCard from './namecard/NameCard'
 import ContentContainer from './contentcontainer/ContentContainer'
 

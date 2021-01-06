@@ -1,8 +1,19 @@
 .ContentContainer-container{
-    background-color: ivory;
+    background-color: rgb(255, 255, 247);
 }
 
 .ContentContainer-content{
-    padding: 5vw;
+    padding: 3vw;
     
+}
+
+.ContentContainer-title{
+    border-bottom: solid 2px black;
+    font-size: 30px;
+}
+
+.ContentContainer-section{
+    border: solid 1px grey;
+    width : 100%;
+    height: fit-content;
 }

@@ -1,0 +1,15 @@
+.TrackerDot{
+    border-radius: 50%;
+    width: 1vmin;
+    height: 1vmin;
+    margin-right: 1vmin;
+    cursor: pointer;
+}
+
+.TrackerDot-off{
+    background-color: rgb(190, 177, 236);
+}
+
+.TrackerDot-on{
+    background-color: rgb(70, 9, 238);
+}
