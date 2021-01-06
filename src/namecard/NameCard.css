@@ -10,7 +10,7 @@
     align-items: center;
     flex-direction: row;
     opacity: 0;
-    transition: 1s;
+    transition: opacity 1s;
 }
 
 .NameCard-container-show{
@@ -25,7 +25,7 @@
     display: flex;
     margin-right: 5vw;
     margin-left: 1vw;
-    transition: 0.5s;
+    transition: opacity 0.5s;
 }
 
 .profile-pic:hover{
