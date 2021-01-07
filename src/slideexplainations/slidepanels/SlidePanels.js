@@ -28,7 +28,7 @@ export default class SlidePanels extends React.Component{
             <div className = "SlidePanels-container">
                 <div className = "SlidePanels-main">
                     <div className = "sliderbutton" onClick = {this.slide_left}>{"←"}</div>
-                    <OnePanel content = {this.props.contents[this.state.currentpanel]}/>
+                    <OnePanel content = {this.props.contents[this.state.currentpanel].content}/>
                     <div className = "sliderbutton" onClick = {this.slide_right}>{"→"}</div>
                 </div>
                 <Tracker last_index = {this.last_index} currentpanel = {this.state.currentpanel}  go_to_slide = {this.go_to_slide}/>
@@ -40,20 +40,25 @@ export default class SlidePanels extends React.Component{
         this.setState({
             currentpanel: mypanelnum
         })
+        this.props.go_to_slide(mypanelnum)
     }
 
     slide_left = () => {
-        if(this.state.currentpanel > 0)
+        if(this.state.currentpanel > 0){
             this.setState({
                 currentpanel: this.state.currentpanel - 1
             })
+            this.props.slide_left()
+        }
     }
 
     slide_right = () => {
-        if(this.state.currentpanel < this.last_index)
+        if(this.state.currentpanel < this.last_index){
             this.setState({
                 currentpanel: this.state.currentpanel + 1
             })
+            this.props.slide_right()
+        }
     }
 
     
