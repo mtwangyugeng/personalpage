@@ -3,7 +3,7 @@ import './ContentContainer.css';
 
 // no need later
 import SlideExplainations from '../slideexplainations/SlideExplainations'
-
+import NameCard from '../namecard/NameCard'
 export default class ContentContainer extends React.Component{
     /**
      * As a ContentContainer, I:
@@ -20,6 +20,13 @@ export default class ContentContainer extends React.Component{
                     <div className = "ContentContainer-section">
                         <SlideExplainations/>
                     </div>
+                    <h2 className = "ContentContainer-title">Special Thanks</h2>
+                    <div className = "ContentContainer-section" style = {{background:"black"}}>
+                        <NameCard login = "epicsteve2"/>
+                        <NameCard login = "JDong3"/>
+                    </div>
+                    <h2 className = "ContentContainer-title"></h2>
+                    <div className = "footer">Copyright (c) 2021 Simon Wang</div>
                 </div>
             </div>
         );

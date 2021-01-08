@@ -19,7 +19,7 @@ export default class NameCard extends React.Component{
         show: ""
     }
     data = null
-
+    dataimage = null
     render() {
         return ( 
             <div className = {"NameCard-container " + this.state.show}>
@@ -34,6 +34,9 @@ export default class NameCard extends React.Component{
         fetch(`https://api.github.com/users/${this.props.login}`)
             .then((response) => response.json())
             .then((jsondata) => {this.data = jsondata})
+            .then(() => fetch(this.data.avatar_url)
+                    .then(response => response.blob())
+                    .then(images => this.dataimage = URL.createObjectURL(images)))
             .then(() => this.setState({loading: false}))
             .catch((e) => this.setState({error: e}));
 
@@ -46,7 +49,7 @@ export default class NameCard extends React.Component{
         if(!this.data) return null;
         return (
             <>
-                <img className = "profile-pic" alt = {this.data.login} src = {this.data.avatar_url} onClick = {() => window.open(this.data.html_url)}/>
+                <img className = "profile-pic" alt = {this.data.login} src = {this.dataimage} onClick = {() => window.open(this.data.html_url)}/>
                 <div className = "profile-info">
                     <h2>{this.data.name}</h2>
                     <p>{this.data.login}</p>

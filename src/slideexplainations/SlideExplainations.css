@@ -1,6 +1,28 @@
 .SlideExplainations-container{
-    background-color: chocolate;
+    /* background-color: chocolate; */
     width: 80vmin;
     height: 80vmin;
     margin: auto;
+}
+
+.SlideExplainations-explainations{
+    border-left: black 1px solid;
+    border-right: black 1px solid;
+    border-radius: 5%;
+    padding: 1vmin;
+    height: 25%;
+    font-size: 1.8vmin;
+}
+
+.SlideExplainations-github {
+    background: url(GitHub-Mark-120px-plus.png);
+    background-size: 100% 100%;
+    width: 4vmin;
+    height: 4vmin;
+    transition: opacity 0.7s;
+}
+
+.SlideExplainations-github:hover{
+    cursor: pointer;
+    opacity: 0.7;
 }

@@ -1,5 +1,5 @@
 .ContentContainer-container{
-    background-color: rgb(255, 255, 247);
+    background-color: rgba(255, 255, 247, 0.9);
 }
 
 .ContentContainer-content{
@@ -16,4 +16,11 @@
     border: solid 1px grey;
     width : 100%;
     height: fit-content;
+    border-radius: 10%;
+}
+.footer {
+    height: 5vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

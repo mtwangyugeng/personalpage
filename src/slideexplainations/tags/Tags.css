@@ -1,13 +1,13 @@
 .Tags-container{
     display: flex;
-    background-color: royalblue;
+    /* background-color: royalblue; */
     flex-wrap: wrap;
 }
 .tag{
     background-color: rgb(177, 233, 209);
     border-radius: 10%;
     width: fit-content;
-    margin-left: 0.5vmin;
+    margin-right: 0.5vmin;
     padding-left: 0.5vmin;
     padding-right: 1vmin;
     font-size: 2vmin;

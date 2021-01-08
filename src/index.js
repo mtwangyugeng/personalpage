@@ -19,7 +19,7 @@ ReactDOM.render(
     {/* <SlidePanels contents = {[-1,0, <iframe width="100%" height="100%" src="https://mtwangyugeng.github.io/hbeatbox/" title="W3Schools Free Online Web Tutorials"></iframe>, 2, 3, 4]} /> */}
     {/* <App login = "mtwangyugeng"/> */}
     {/* <iframe src="https://mtwangyugeng.github.io/hbeatbox/" title="W3Schools Free Online Web Tutorials"></iframe>  */}
-    <NameCard login = "epicsteve2"/>
+    {/* <NameCard login = "epicsteve2"/> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
