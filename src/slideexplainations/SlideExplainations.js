@@ -17,7 +17,7 @@ export default class SlideExplainations extends React.Component{
         tags: ["javascript", "react.js", "CSS", "HTML"], 
         content: <iframe width="100%" height="100%" src="https://mtwangyugeng.github.io/hbeatbox/" title="W3Schools Free Online Web Tutorials"></iframe>,
         repository: "https://github.com/mtwangyugeng/hbeatbox",
-        explaination: "My first react project!"
+        explaination: "My first react project! Click anywhere in the black box in start. Make your own awesome beats by clicking on the button panel at the bottom. You can play, stop, pause, clear, save, and load your beats!"
     }
 
     test = {
