@@ -1,7 +1,7 @@
 .NameCard-container{
     background-color: ivory;
-    height: 25vw;
-    width: 60vw;
+    height: 25vmin;
+    width: 60vmin;
     border-radius: 5%;
     margin: auto;
     margin-bottom: 2vmin;
@@ -18,13 +18,13 @@
 }
 
 .profile-pic{
-    border: solid 0.2vmin red;
+    border: solid 1px rgb(89, 188, 245);
     border-radius: 50%;
-    height: 20vw;
-    width: 20vw;
+    height: 80%;
+    width: 33%;
     display: flex;
-    margin-right: 5vw;
-    margin-left: 1vw;
+    margin-right: 10%;
+    margin-left: 5%;
     transition: opacity 0.5s;
 }
 
@@ -34,15 +34,15 @@
 }
 
 .profile-info {
-    font-size: 1.5vw;
+    font-size: 100%;
 }
 
 p{
-    line-height: 0.5vmin;
+    line-height: 10%;
     text-overflow:inherit;
 }
 
 .profile-info-bio{
-    font-size: 1vw;
-    margin-right: 1vw;
+    font-size: 70%;
+    margin-right: 5%;
 }

@@ -1,5 +1,7 @@
 .ContentContainer-container{
     background-color: rgba(255, 255, 247, 0.9);
+    width: 100vmin;
+    margin: auto;
 }
 
 .ContentContainer-content{

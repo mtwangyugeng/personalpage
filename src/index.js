@@ -9,7 +9,7 @@ import ContentContainer from './contentcontainer/ContentContainer'
 
 ReactDOM.render(
   <React.StrictMode>
-    <NameCard login = "mtwangyugeng"/>
+    <NameCard login = "mtwangyugeng" style = {{width:"60vw", height: "25vw", fontSize: "1.5vw"}}/>
     {/* <NameCard login = "epicsteve2"/> */}
     <ConnectionBar 
       linkedin = "https://www.linkedin.com/in/yu-geng-wang-474553192/"

@@ -22,7 +22,7 @@ export default class NameCard extends React.Component{
     dataimage = null
     render() {
         return ( 
-            <div className = {"NameCard-container " + this.state.show}>
+            <div className = {"NameCard-container " + this.state.show} style = {this.props.style}>
                 {this.render_putin()}
             </div>
         );
