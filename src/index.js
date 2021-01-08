@@ -15,7 +15,9 @@ ReactDOM.render(
       linkedin = "https://www.linkedin.com/in/yu-geng-wang-474553192/"
       github = "https://github.com/mtwangyugeng"
     />
-    <ContentContainer/>
+    <div>
+      <ContentContainer/>
+    </div>
     {/* <SlidePanels contents = {[-1,0, <iframe width="100%" height="100%" src="https://mtwangyugeng.github.io/hbeatbox/" title="W3Schools Free Online Web Tutorials"></iframe>, 2, 3, 4]} /> */}
     {/* <App login = "mtwangyugeng"/> */}
     {/* <iframe src="https://mtwangyugeng.github.io/hbeatbox/" title="W3Schools Free Online Web Tutorials"></iframe>  */}
