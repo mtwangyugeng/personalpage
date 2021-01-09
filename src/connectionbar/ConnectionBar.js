@@ -20,7 +20,7 @@ export default class SpeedChanger extends React.Component{
             <div id = "sticktop" className = {"the-bar "  + this.state.stick}>
                 <div className = {"linkedin icons"} onClick = {this.golinkedin}></div>
                 <div className = "github icons" onClick = {this.gogithub}></div>
-                <div className = "sayhi"></div>
+                <div className = "resume" onClick = {() => window.open("https://raw.githubusercontent.com/mtwangyugeng/resume/master/Short_Resume.YuGeng.Wang.pdf")}>Resume</div>
             </div>
         );
     }
