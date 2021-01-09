@@ -14,6 +14,7 @@ ReactDOM.render(
     <ConnectionBar 
       linkedin = "https://www.linkedin.com/in/yu-geng-wang-474553192/"
       github = "https://github.com/mtwangyugeng"
+      resume = "https://raw.githubusercontent.com/mtwangyugeng/resume/master/Short_Resume.YuGeng.Wang.pdf"
     />
     <div>
       <ContentContainer/>

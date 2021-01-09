@@ -12,6 +12,10 @@
     transition: opacity 1s;
 }
 
+.the-bar:hover{
+    opacity: 1;
+}
+
 .sticky {
     position: fixed;
     left: 50%;
