@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/personalpage/static/css/main.ae168067.chunk.css",
+    "main.css": "/personalpage/static/css/main.26f0470d.chunk.css",
     "main.js": "/personalpage/static/js/main.0dd77e95.chunk.js",
     "main.js.map": "/personalpage/static/js/main.0dd77e95.chunk.js.map",
     "runtime-main.js": "/personalpage/static/js/runtime-main.ddcfbdea.js",
@@ -8,14 +8,14 @@
     "static/js/2.13ee60ab.chunk.js": "/personalpage/static/js/2.13ee60ab.chunk.js",
     "static/js/2.13ee60ab.chunk.js.map": "/personalpage/static/js/2.13ee60ab.chunk.js.map",
     "index.html": "/personalpage/index.html",
-    "static/css/main.ae168067.chunk.css.map": "/personalpage/static/css/main.ae168067.chunk.css.map",
+    "static/css/main.26f0470d.chunk.css.map": "/personalpage/static/css/main.26f0470d.chunk.css.map",
     "static/js/2.13ee60ab.chunk.js.LICENSE.txt": "/personalpage/static/js/2.13ee60ab.chunk.js.LICENSE.txt",
     "static/media/index.css": "/personalpage/static/media/algonquin.90e7d16b.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.ddcfbdea.js",
     "static/js/2.13ee60ab.chunk.js",
-    "static/css/main.ae168067.chunk.css",
+    "static/css/main.26f0470d.chunk.css",
     "static/js/main.0dd77e95.chunk.js"
   ]
 }
