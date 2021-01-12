@@ -7,8 +7,11 @@ import ConnectionBar from './connectionbar/ConnectionBar'
 import NameCard from './namecard/NameCard'
 import ContentContainer from './contentcontainer/ContentContainer'
 
+import ChatBox from './chatbox/ChatBox'
+
 ReactDOM.render(
   <React.StrictMode>
+    <ChatBox/>
     <NameCard login = "mtwangyugeng" style = {{width:"60vw", height: "25vw", fontSize: "1.5vw"}}/>
     {/* <NameCard login = "epicsteve2"/> */}
     <ConnectionBar 
