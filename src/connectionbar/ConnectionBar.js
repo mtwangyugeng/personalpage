@@ -1,7 +1,7 @@
 import React from 'react';
 import './ConnectionBar.css';
 
-export default class SpeedChanger extends React.Component{
+export default class ConnectionBar extends React.Component{
     /**
      * As a connection bar, I:
      *  - put a bar in the container with websites logos.
