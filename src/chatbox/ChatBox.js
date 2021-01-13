@@ -3,29 +3,35 @@ import './ChatBox.css';
 
 import socketIOClient from "socket.io-client";
 
+import InputAtBottom from './inputatbottom/InputAtBottom'
+
 export default class ChatBox extends React.Component{
     /**
      */
     ENDPOINT = "http://127.0.0.1:4001";
     socket = socketIOClient(this.ENDPOINT);
     state = {
-        chat: "a",
+        chat: [],
         text: ""
     }
 
     componentDidMount(){
         this.socket.on('chat message', (msg) => {
-            this.setState({chat: msg})
+            var neo = this.state.chat
+            neo.push(<div>{msg}</div>)
+            this.setState({chat: neo})
         });
+        console.log(this.state.chat)
     }
     
   
     render() {
         return ( 
             <div className = "ChatBox-container">
-                <div>ok{this.state.chat}</div>
-                <input type="text" value={this.state.text} onChange={this.textchange} />
-                <button onClick = {this.submit}>submit</button>
+                <div className = "Chat-container">
+                    {this.state.chat.map((v) => v)}
+                </div>
+                <InputAtBottom textchange = {this.textchange} submit = {this.submit} text = {this.state.text}/>
             </div>
         );
     }

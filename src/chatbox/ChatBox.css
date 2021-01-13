@@ -1,4 +1,10 @@
 .ChatBox-container{
-    height: 40px;
+    height: 60vmin;
+    width: 60vmin;
     background-color: blanchedalmond;
+}
+
+.Chat-container{
+    background-color: grey;
+    height: 90%;
 }
