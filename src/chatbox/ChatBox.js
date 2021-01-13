@@ -9,12 +9,21 @@ export default class ChatBox extends React.Component{
     ENDPOINT = "http://127.0.0.1:4001";
     socket = socketIOClient(this.ENDPOINT);
     state = {
+        chat: "a",
         text: ""
     }
+
+    componentDidMount(){
+        this.socket.on('chat message', (msg) => {
+            this.setState({chat: msg})
+        });
+    }
+    
   
     render() {
         return ( 
             <div className = "ChatBox-container">
+                <div>ok{this.state.chat}</div>
                 <input type="text" value={this.state.text} onChange={this.textchange} />
                 <button onClick = {this.submit}>submit</button>
             </div>
@@ -30,5 +39,6 @@ export default class ChatBox extends React.Component{
         this.setState({text: ""})
     }
 
+    
 }
 
