@@ -1,9 +1,14 @@
 .InputAtBottom-container{
     background-color: brown;
-    height: 10%;
+    /* display: flex; */
+    height: fit-content;
+    
 }
 
 .InputAtBottom-text{
     background-color: pink;
-    height: 90%;
+    max-height: 10em;
+    /* height: 1em; */
+    /* flex:1; */
+    /* width: 20em; */
 }

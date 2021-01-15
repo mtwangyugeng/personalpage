@@ -4,10 +4,12 @@ import './InputAtBottom.css';
 
 export default class InputAtBottom extends React.Component{
 
+    tt = React.createRef()
+    state = {height: "1em"}
     render() {
         return ( 
             <div className = "InputAtBottom-container">
-                <input className = "InputAtBottom-text" type="text" value={this.props.text} onChange={this.textchange} onKeyPress = {(e) => e.key === 'Enter' ? this.submit(): null} />
+                <textarea ref={this.tt} style = {{height: this.state.height}} value = {this.props.text} className = "InputAtBottom-text" onChange={this.textchange} onKeyPress = {(e) => e.key === 'Enter' ? this.submit(): null}/>
                 <button onClick = {this.submit}>submit</button>
             </div>
         );
@@ -15,6 +17,7 @@ export default class InputAtBottom extends React.Component{
 
     textchange = (e) => {
         this.props.textchange(e)
+        this.setState({height: this.tt.current.scrollHeight + "px"})
     }
 
     submit = () => {

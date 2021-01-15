@@ -1,10 +1,13 @@
 .ChatBox-container{
-    height: 60vmin;
-    width: 60vmin;
+    min-height: 60vmin;
+    width: fit-content;
     background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
 }
 
 .Chat-container{
+    overflow-y: scroll;
     background-color: grey;
-    height: 90%;
+    flex:1;
 }
