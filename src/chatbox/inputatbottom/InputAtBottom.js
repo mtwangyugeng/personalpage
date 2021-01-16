@@ -17,7 +17,12 @@ export default class InputAtBottom extends React.Component{
 
     textchange = (e) => {
         this.props.textchange(e)
-        this.setState({height: this.tt.current.scrollHeight + "px"})
+        this.setState({height: "1em"})
+    }
+
+    componentDidUpdate(){
+        if(this.state.height === "1em")
+            this.setState({height: this.tt.current.scrollHeight + "px"})
     }
 
     submit = () => {

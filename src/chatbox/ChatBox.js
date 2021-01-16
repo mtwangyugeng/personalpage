@@ -12,7 +12,8 @@ export default class ChatBox extends React.Component{
     socket = socketIOClient(this.ENDPOINT);
     state = {
         chat: [],
-        text: ""
+        text: "",
+        display: "none"
     }
 
     componentDidMount(){
@@ -27,13 +28,23 @@ export default class ChatBox extends React.Component{
   
     render() {
         return ( 
-            <div className = "ChatBox-container">
-                <div className = "Chat-container">
-                    {this.state.chat.map((v) => v)}
+            <div className = "ChatBox-withbutton">
+                <div className = "ChatBox-container" style = {{display: this.state.display}}>
+                    <div className = "Chat-container">
+                        {this.state.chat.map((v) => v)}
+                    </div>
+                    <InputAtBottom textchange = {this.textchange} submit = {this.submit} text = {this.state.text}/>
                 </div>
-                <InputAtBottom textchange = {this.textchange} submit = {this.submit} text = {this.state.text}/>
+                <div className = "ChatBox-button" onClick = {this.toggledisplay}>Chat</div>
             </div>
         );
+    }
+
+    toggledisplay = () => {
+        if(this.state.display === 'none')
+            this.setState({display: 'flex'})
+        else
+            this.setState({display: 'none'})
     }
 
     textchange = (e) => {
