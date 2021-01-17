@@ -13,7 +13,8 @@ export default class ChatBox extends React.Component{
     state = {
         chat: [],
         text: "",
-        display: "none"
+        display: "none",
+        height: "0vmin"
     }
 
     componentDidMount(){
@@ -29,11 +30,11 @@ export default class ChatBox extends React.Component{
     render() {
         return ( 
             <div className = "ChatBox-withbutton">
-                <div className = "ChatBox-container" style = {{display: this.state.display}}>
+                <div className = "ChatBox-container" style = {{height: this.state.height}}>
                     <div className = "Chat-container">
                         {this.state.chat.map((v) => v)}
                     </div>
-                    <InputAtBottom textchange = {this.textchange} submit = {this.submit} text = {this.state.text}/>
+                    <InputAtBottom display = {this.state.display} textchange = {this.textchange} submit = {this.submit} text = {this.state.text}/>
                 </div>
                 <div className = "ChatBox-button" onClick = {this.toggledisplay}>Chat</div>
             </div>
@@ -42,9 +43,9 @@ export default class ChatBox extends React.Component{
 
     toggledisplay = () => {
         if(this.state.display === 'none')
-            this.setState({display: 'flex'})
+            this.setState({display: 'flex', height: '40vmin'})
         else
-            this.setState({display: 'none'})
+            this.setState({display: 'none', height: '0vmin'})
     }
 
     textchange = (e) => {

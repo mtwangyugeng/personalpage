@@ -8,19 +8,17 @@
 }
 
 .ChatBox-container{
-    height: 40vmin;
     width: 40vmin;
     background-color: blanchedalmond;
     display: flex;
     flex-direction: column;
-    transition: 2s;
+    transition: 1s;
     float:left;
-    
 }
 
 .Chat-container{
-    overflow-y: scroll;
-    background-color: grey;
+    overflow-y: auto;
+    background-color: rgb(245, 235, 235);
     flex:1;
 }
 
