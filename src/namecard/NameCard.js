@@ -20,9 +20,11 @@ export default class NameCard extends React.Component{
     }
     data = null
     dataimage = null
+    card = React.createRef()
+
     render() {
         return ( 
-            <div className = {"NameCard-container " + this.state.show} style = {this.props.style}>
+            <div ref={this.card} className = {"NameCard-container " + this.state.show} style = {this.props.style}>
                 {this.render_putin()}
             </div>
         );
@@ -40,8 +42,21 @@ export default class NameCard extends React.Component{
             .then(() => this.setState({loading: false}))
             .catch((e) => this.setState({error: e}));
 
-        this.setState({show: "NameCard-container-show"})
+        this.handlevisible()
+        window.addEventListener('scroll', this.handlevisible);
+        // this.setState({show: "NameCard-container-show"})
+    } componentWillUnmount() {
+        window.removeEventListener('scroll', this.handlevisible)
     }
+
+    handlevisible = () => {
+        console.log(this.props.login, this.card.current.offsetTop , window.scrollY)
+        if(!this.show && (this.card.current.offsetTop + this.card.current.offsetHeight) < (window.scrollY + window.innerHeight) && this.card.current.offsetTop > window.scrollY)
+            this.setState({show: "NameCard-container-show"})
+        else
+            this.setState({show: ""})
+    }
+
 
     render_putin = () => {
         if(this.state.loading) return <h1>Loading...</h1>;
