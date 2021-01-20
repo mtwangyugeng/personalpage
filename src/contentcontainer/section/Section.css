@@ -1,0 +1,26 @@
+.Section-title{
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0;
+    transition: 2s;
+}
+.Section-title-show{
+    opacity: 1;
+}
+
+.Section-underline{
+    transition: 1s;
+    border-top: solid 2px black;
+    width: 0%;
+    padding-bottom: 1%;
+}
+
+.Section-underline-show{
+    width: 100%;
+}
+
+
+.Section-content{
+    width : 100%;
+    height: fit-content;
+}

@@ -3,36 +3,32 @@ import './ConnectionBar.css';
 
 export default class ConnectionBar extends React.Component{
     /**
-     * As a connection bar, I:
-     *  - put a bar in the container with websites logos.
-     *  - recieve http addresses from @props and link them
-     *      to the corresponding logos.
-     * I support: 
-     *  -this.props.linkedin
-     *  -this.props.github
+     * As a connection bar, I navigate:
+     * 
      */
     state = {
         stick: ""
     }
+    pos = React.createRef()
 
     render() {
         return ( 
-            <div id = "sticktop" className = {"the-bar "  + this.state.stick}>
-                <div className = {"linkedin icons"} onClick = {this.golinkedin}></div>
+            <div ref = {this.pos} className = {"the-bar "  + this.state.stick}>
+                <div style = {{width: this.props.progress}} className = "ConnectionBar-progress"></div>
+                {/* <div className = {"linkedin icons"} onClick = {this.golinkedin}></div>
                 <div className = "github icons" onClick = {this.gogithub}></div>
-                <div className = "resume" onClick = {() => window.open(this.props.resume)}>Resume</div>
+                <div className = "resume" onClick = {() => window.open(this.props.resume)}>Resume</div> */}
             </div>
         );
     }
 
     componentDidMount(){
-        var header = document.getElementById("sticktop");
-        this.sticky = header.offsetTop;
+        this.sticky = this.pos.current.offsetTop;
         window.onresize = () => {
             this.setState({
                 stick: ""
             })
-            this.sticky = header.offsetTop;
+            this.sticky = this.pos.current.offsetTop;
             if(window.pageYOffset > this.sticky) 
                 this.setState({
                     stick: "sticky"

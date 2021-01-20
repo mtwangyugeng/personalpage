@@ -1,54 +1,38 @@
-.the-bar{
-    width : 100vmin;
+.ConnectionBarStatic-the-bar{
+    width : 100%;
     height: 5vmin;
-    background-color: rgb(209, 206, 206);
+    background-color: rgb(207, 195, 203);
     margin: auto;
     display: flex;
     flex-direction: row;
     /* position: fixed;
     bottom: 0; */
     z-index: 1;
-    opacity: 0.5;
+    opacity: 1;
     transition: opacity 1s;
 }
 
-.the-bar:hover{
-    opacity: 1;
-}
-
-.sticky {
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-    opacity: 1;
-  }
-
-  .sticky + *{
-    padding-top: 5vmin;
-  }
-
-.icons{
+.ConnectionBarStatic-icons{
     height: 100%;
     cursor:pointer;
 }
-.icons:hover{
+.ConnectionBarStatic-icons:hover{
     opacity: 0.5;
 }
 
-.linkedin {
+.ConnectionBarStatic-linkedin {
     background: url(LI-In-Bug.png);
     background-size: 100% 100%;
     width: 6vmin;
 }
 
-.github {
+.ConnectionBarStatic-github {
     background: url(GitHub-Mark-120px-plus.png);
     background-size: 100% 100%;
     width: 5vmin;
 }
 
-.resume{
+.ConnectionBarStatic-resume{
     background-image: linear-gradient(to bottom right, blue, purple);
     border-radius: 30%;
     color: white;
@@ -65,7 +49,7 @@
     font-size: 2vmin;
 }
 
-.resume:hover{
+.ConnectionBarStatic-resume:hover{
     opacity: 0.5;
     cursor: pointer;
 }

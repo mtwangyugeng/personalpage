@@ -6,9 +6,10 @@
 }
 
 .SlideExplainations-explainations{
-    border-left: black 1px solid;
-    border-right: black 1px solid;
-    border-radius: 5%;
+    /* border-left: black 1px solid;
+    border-right: black 1px solid; */
+    /* border-radius: 5%; */
+    background-color: rgb(218, 218, 210);
     padding: 1vmin;
     height: 25%;
     font-size: 1.8vmin;

@@ -12,6 +12,8 @@
 .ContentContainer-title{
     border-bottom: solid 2px black;
     font-size: 30px;
+    width: 0%;
+    transition: 1s;
 }
 
 .ContentContainer-section{

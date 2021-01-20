@@ -1,0 +1,79 @@
+.the-bar{
+    width : 100vmin;
+    height: 5vmin;
+    background-color: rgb(209, 206, 206);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    /* position: fixed;
+    bottom: 0; */
+    z-index: 1;
+    opacity: 0.5;
+    transition: opacity 1s;
+}
+
+.the-bar:hover{
+    opacity: 1;
+}
+
+.ConnectionBar-progress{
+    width: 0%;
+    height: 100%;
+    background-color: pink;
+    transition: 1.5s;
+}
+
+
+.sticky {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    opacity: 1;
+  }
+
+  .sticky + *{
+    padding-top: 5vmin;
+  }
+
+.icons{
+    height: 100%;
+    cursor:pointer;
+}
+.icons:hover{
+    opacity: 0.5;
+}
+
+.linkedin {
+    background: url(LI-In-Bug.png);
+    background-size: 100% 100%;
+    width: 6vmin;
+}
+
+.github {
+    background: url(GitHub-Mark-120px-plus.png);
+    background-size: 100% 100%;
+    width: 5vmin;
+}
+
+.resume{
+    background-image: linear-gradient(to bottom right, blue, purple);
+    border-radius: 30%;
+    color: white;
+    user-select: none;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 2vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vmin;
+    height: 90%;
+    text-align: center;
+    font-size: 2vmin;
+}
+
+.resume:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
