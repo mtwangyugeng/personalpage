@@ -14,12 +14,29 @@ export default class ConnectionBar extends React.Component{
     render() {
         return ( 
             <div ref = {this.pos} className = {"the-bar "  + this.state.stick}>
-                <div style = {{width: this.props.progress}} className = "ConnectionBar-progress"></div>
-                {/* <div className = {"linkedin icons"} onClick = {this.golinkedin}></div>
-                <div className = "github icons" onClick = {this.gogithub}></div>
-                <div className = "resume" onClick = {() => window.open(this.props.resume)}>Resume</div> */}
+                <div className = "ConnectionBar-top" onClick = {this.goto(0)}>⬆️Top</div>
+                <div className = "ConnectionBar-rightbar">
+                    <div className = "ConnectionBar-secpos"> 
+                        
+                        {this.props.secpos.map(([title,y,siz]) => 
+                        <div className = "ConnectionBar-sec" style = {{width: siz + "%"}} onClick = {this.goto(y.current.offsetTop)}>
+                            {title}
+                        </div>
+                        )}
+                    </div>
+                    <div style = {{width: this.props.progress}} className = "ConnectionBar-progress"></div>
+                </div>
             </div>
         );
+    }
+
+
+    goto = (y) => {
+        return () => window.scrollTo({
+            top: y - this.pos.current.offsetHeight,
+            left: 0,
+            behavior: 'smooth'
+          })
     }
 
     componentDidMount(){
@@ -46,14 +63,6 @@ export default class ConnectionBar extends React.Component{
             this.setState({
                 stick: ""
             })
-    }
-
-    golinkedin = () => {
-        window.open(this.props.linkedin)
-    }
-
-    gogithub = () => {
-        window.open(this.props.github)
     }
 }
 

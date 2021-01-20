@@ -15,17 +15,17 @@ export default class SlideExplainations extends React.Component{
     hbeatbox = {
         title: "Simple Beat-Machine",
         tags: ["javascript", "react.js", "CSS", "HTML"], 
-        content: <iframe width="100%" height="100%" src="https://mtwangyugeng.github.io/hbeatbox/" title="W3Schools Free Online Web Tutorials"></iframe>,
+        content: <iframe width="100%" height="100%" src="https://mtwangyugeng.github.io/hbeatbox/" title="hbeatbox"></iframe>,
         repository: "https://github.com/mtwangyugeng/hbeatbox",
         explaination: "My first react project! Click anywhere in the black box in start. Make your own awesome beats by clicking on the button panel at the bottom. You can play, stop, pause, clear, save, and load your beats!"
     }
 
     test = {
-        title: "Placeholder",
-        tags: ["a", "bb", "ccc", "ddd", "kappaman"], 
-        content: <h1>SlidePanels are cool!</h1>,
-        repository: "https://github.com/mtwangyugeng",
-        explaination: "This is just a placeholder to see if the slidepanels are working properly"
+        title: "My Personal Webpage",
+        tags: ["javascript", "react.js", "CSS", "HTML", 'socket.io'], 
+        content: <iframe width="100%" height="100%" src="https://mtwangyugeng.github.io/personalpage/" title="personalpage"></iframe>,
+        repository: "https://github.com/mtwangyugeng/personalpage",
+        explaination: "It is this website!"
     }
 
     tt = [this.hbeatbox, this.test]
@@ -38,7 +38,7 @@ export default class SlideExplainations extends React.Component{
                     <div style = {{fontWeight:"bold"}}>{this.tt[this.state.currentpanel].title}</div>
                     <Tags tags = {this.tt[this.state.currentpanel].tags} />
                     {this.tt[this.state.currentpanel].explaination}
-                    <div className = "SlideExplainations-github" onClick = {() => window.open("https://github.com/mtwangyugeng/hbeatbox")}></div>
+                    <div className = "SlideExplainations-github" onClick = {() => window.open(this.tt[this.state.currentpanel].repository)}></div>
                 </div>
             </div>
         );

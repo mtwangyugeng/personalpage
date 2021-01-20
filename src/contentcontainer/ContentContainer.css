@@ -9,13 +9,6 @@
     
 }
 
-.ContentContainer-title{
-    border-bottom: solid 2px black;
-    font-size: 30px;
-    width: 0%;
-    transition: 1s;
-}
-
 .ContentContainer-section{
     border: solid 1px grey;
     width : 100%;
@@ -24,6 +17,7 @@
 }
 .footer {
     height: 5vmin;
+    font-size: 1.5vmin;
     display: flex;
     justify-content: center;
     align-items: center;

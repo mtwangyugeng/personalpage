@@ -16,11 +16,38 @@
     opacity: 1;
 }
 
+.ConnectionBar-rightbar{
+    width: 95vmin;
+}
+
 .ConnectionBar-progress{
     width: 0%;
     height: 100%;
     background-color: pink;
     transition: 1.5s;
+}
+
+.ConnectionBar-secpos{
+    position: absolute;
+    display: flex;
+    width: 95vmin;
+    height: 4vmin;
+    font-size: 2vmin;
+    /* opacity: 0.5; */
+    background-color: rgb(241, 213, 86,0.5);
+}
+
+.ConnectionBar-sec{
+    color: rgb(45, 70, 99);
+    transition: 0.5s;
+    text-align: center;
+    border-right: 1px solid rgba(99, 96, 96, 0.226);
+}
+
+.ConnectionBar-sec:hover{
+    background-color: rgb(52, 130, 248);
+    color: wheat;
+    cursor: pointer;
 }
 
 
@@ -30,50 +57,35 @@
     transform: translateX(-50%);
     top: 0;
     opacity: 1;
+    animation-name: example;
+    animation-duration: 0.5s;
+  }
+
+  @keyframes example {
+    0%   {top:1vmin;}
+    20%  { top:-1vmin;}
+    40%  {top:0.5vmin;}
+    60%  { top:-0.5vmin;}
+    80% { top:0.2vmin;}
+    100% { top:-0.2vmin;}
   }
 
   .sticky + *{
     padding-top: 5vmin;
   }
 
-.icons{
-    height: 100%;
-    cursor:pointer;
-}
-.icons:hover{
-    opacity: 0.5;
-}
-
-.linkedin {
-    background: url(LI-In-Bug.png);
-    background-size: 100% 100%;
-    width: 6vmin;
-}
-
-.github {
-    background: url(GitHub-Mark-120px-plus.png);
-    background-size: 100% 100%;
-    width: 5vmin;
-}
-
-.resume{
-    background-image: linear-gradient(to bottom right, blue, purple);
-    border-radius: 30%;
-    color: white;
-    user-select: none;
-    align-self: center;
-    margin-left: auto;
-    margin-right: 2vmin;
+.ConnectionBar-top{
+    color: rgb(45, 70, 99);
+    background-color: tomato;
+    transition: 0.5s;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 15vmin;
-    height: 90%;
-    text-align: center;
-    font-size: 2vmin;
+    width: 5vmin;
+    font-size: 1.5vmin;
 }
 
-.resume:hover{
-    opacity: 0.5;
+.ConnectionBar-top:hover{
+    background-color: rgb(52, 130, 248);
+    color: wheat;
     cursor: pointer;
 }

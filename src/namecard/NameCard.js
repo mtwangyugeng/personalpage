@@ -50,7 +50,7 @@ export default class NameCard extends React.Component{
     }
 
     handlevisible = () => {
-        console.log(this.props.login, this.card.current.offsetTop , window.scrollY)
+        // console.log(this.props.login, this.card.current.offsetTop , window.scrollY)
         if(!this.show && (this.card.current.offsetTop + this.card.current.offsetHeight) < (window.scrollY + window.innerHeight) && this.card.current.offsetTop > window.scrollY)
             this.setState({show: "NameCard-container-show"})
         else

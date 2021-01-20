@@ -11,7 +11,7 @@ import ChatBox from './chatbox/ChatBox'
 
 ReactDOM.render(
   <React.StrictMode>
-    <ChatBox/>
+    {/* <ChatBox/> */}
     <ConnectionBarStatic 
       linkedin = "https://www.linkedin.com/in/yu-geng-wang-474553192/"
       github = "https://github.com/mtwangyugeng"
@@ -30,7 +30,12 @@ ReactDOM.render(
     {/* <SlidePanels contents = {[-1,0, <iframe width="100%" height="100%" src="https://mtwangyugeng.github.io/hbeatbox/" title="W3Schools Free Online Web Tutorials"></iframe>, 2, 3, 4]} /> */}
     {/* <App login = "mtwangyugeng"/> */}
     {/* <iframe src="https://mtwangyugeng.github.io/hbeatbox/" title="W3Schools Free Online Web Tutorials"></iframe>  */}
-    {/* <NameCard login = "epicsteve2"/> */}
+    <NameCard login = "mtwangyugeng" style = {{width:"60vw", height: "25vw", fontSize: "1.5vw"}}/>
+    <ConnectionBarStatic 
+      linkedin = "https://www.linkedin.com/in/yu-geng-wang-474553192/"
+      github = "https://github.com/mtwangyugeng"
+      resume = "https://raw.githubusercontent.com/mtwangyugeng/resume/master/Short_Resume.YuGeng.Wang.pdf"
+    />
   </React.StrictMode>,
   document.getElementById('root')
 );
