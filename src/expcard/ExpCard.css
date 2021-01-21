@@ -1,0 +1,51 @@
+.ExpCard-container{
+    background-color: ivory;
+    height: 40vmin;
+    width: 30vmin;
+    border-radius: 5%;
+    position: relative;
+    /* margin: auto; */
+    margin-bottom: 2vmin;
+    margin-top: 2vmin;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 1s;
+    font-size: 1.5vmin;
+    
+}
+.ExpCard-container-show{
+    opacity: 1;
+    animation-name: example;
+    animation-duration: 1s;  
+    animation-fill-mode: backwards;
+}
+@keyframes example {
+    from {left: 10vmin;pointer-events: none;}
+    to {left: 0vmin; pointer-events: none;}
+  }
+.ExpCard-container:hover{
+    cursor: pointer;
+    height: 42vmin;
+    width: 31vmin;
+}
+
+.ExpCard-pic{
+    border: solid 1px rgb(89, 188, 245);
+    /* border-radius: 50%; */
+    height: 60%;
+    width: 80%;
+    /* display: flex; */
+    margin-top: 5%;
+    margin-bottom: 5%;
+    transition: opacity 0.5s;
+}
+
+.ExpCard-info{
+    width: 90%;
+    height: 28%;
+    padding: 0.5vmin;
+    border-radius: 5%;
+    background-color: rgb(240, 228, 205);
+}

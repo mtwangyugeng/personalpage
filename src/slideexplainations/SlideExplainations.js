@@ -22,10 +22,10 @@ export default class SlideExplainations extends React.Component{
 
     test = {
         title: "My Personal Webpage",
-        tags: ["javascript", "react.js", "CSS", "HTML", 'socket.io'], 
+        tags: ["javascript", "react.js", "CSS", "HTML", 'socket.io', 'REST'], 
         content: <iframe width="100%" height="100%" src="https://mtwangyugeng.github.io/personalpage/" title="personalpage"></iframe>,
         repository: "https://github.com/mtwangyugeng/personalpage",
-        explaination: "It is this website!"
+        explaination: "It is this website! For the purpose of learning, no library other than react.js in used and no bootstraps. The components in the Webpage is highly reusable, check out its GitHub page."
     }
 
     tt = [this.hbeatbox, this.test]
