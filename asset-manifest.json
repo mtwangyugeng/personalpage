@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/personalpage/static/css/main.a075208a.chunk.css",
-    "main.js": "/personalpage/static/js/main.ca560ba4.chunk.js",
-    "main.js.map": "/personalpage/static/js/main.ca560ba4.chunk.js.map",
+    "main.css": "/personalpage/static/css/main.f4a1a0a8.chunk.css",
+    "main.js": "/personalpage/static/js/main.19b11460.chunk.js",
+    "main.js.map": "/personalpage/static/js/main.19b11460.chunk.js.map",
     "runtime-main.js": "/personalpage/static/js/runtime-main.ddcfbdea.js",
     "runtime-main.js.map": "/personalpage/static/js/runtime-main.ddcfbdea.js.map",
-    "static/js/2.13ee60ab.chunk.js": "/personalpage/static/js/2.13ee60ab.chunk.js",
-    "static/js/2.13ee60ab.chunk.js.map": "/personalpage/static/js/2.13ee60ab.chunk.js.map",
+    "static/js/2.b193cc56.chunk.js": "/personalpage/static/js/2.b193cc56.chunk.js",
+    "static/js/2.b193cc56.chunk.js.map": "/personalpage/static/js/2.b193cc56.chunk.js.map",
     "index.html": "/personalpage/index.html",
-    "static/css/main.a075208a.chunk.css.map": "/personalpage/static/css/main.a075208a.chunk.css.map",
-    "static/js/2.13ee60ab.chunk.js.LICENSE.txt": "/personalpage/static/js/2.13ee60ab.chunk.js.LICENSE.txt",
+    "static/css/main.f4a1a0a8.chunk.css.map": "/personalpage/static/css/main.f4a1a0a8.chunk.css.map",
+    "static/js/2.b193cc56.chunk.js.LICENSE.txt": "/personalpage/static/js/2.b193cc56.chunk.js.LICENSE.txt",
     "static/media/index.css": "/personalpage/static/media/algonquin.90e7d16b.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.ddcfbdea.js",
-    "static/js/2.13ee60ab.chunk.js",
-    "static/css/main.a075208a.chunk.css",
-    "static/js/main.ca560ba4.chunk.js"
+    "static/js/2.b193cc56.chunk.js",
+    "static/css/main.f4a1a0a8.chunk.css",
+    "static/js/main.19b11460.chunk.js"
   ]
 }
