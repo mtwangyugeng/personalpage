@@ -1,5 +1,6 @@
 .NameCard-container{
-    background-color: ivory;
+    /* background-color: ivory; */
+    background-image: linear-gradient(to bottom right, rgba(255,255,255, 0.8), rgba(255,255,255, 0.4));
     height: 25vmin;
     width: 60vmin;
     border-radius: 5%;
@@ -19,7 +20,7 @@
 }
 
 .profile-pic{
-    border: solid 1px rgb(89, 188, 245);
+    /* border: solid 1px rgb(89, 188, 245); */
     border-radius: 50%;
     height: 80%;
     width: 33%;

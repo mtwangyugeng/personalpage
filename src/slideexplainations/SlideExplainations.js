@@ -28,7 +28,15 @@ export default class SlideExplainations extends React.Component{
         explaination: "It is this website! For the purpose of learning, no library other than react.js in used and no bootstraps. The components in the Webpage is highly reusable, check out its GitHub page."
     }
 
-    tt = [this.hbeatbox, this.test]
+    pythondatastructures = {
+        title: "Data Structures and Algorithms Reproductions in Python",
+        tags: ["Python", "Data Structures", 'Algorithm Design'], 
+        content: <img height="100vmin" alt = 'pic here' src = "https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png"/>,
+        repository: "https://github.com/mtwangyugeng/pythondatastructures",
+        explaination: "Reproducing insteresting datastructures for Python for future uses."
+    }
+
+    tt = [this.hbeatbox, this.test, this.pythondatastructures]
 
     render() {
         return ( 

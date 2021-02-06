@@ -1,0 +1,107 @@
+.LandingCard-container{
+    /* background-color: ivory; */
+    background-image: linear-gradient(to bottom right, rgba(255,255,255, 0.8), rgba(255,255,255, 0.4));
+    height: 25vw;
+    width: 60vw;
+    /* max-width: 100vmin;
+    max-height: 38vmin; */
+    border-radius: 5%;
+    margin: auto;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    display: flex; 
+    align-items: center;
+    flex-direction: row;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 1.5vw;
+}
+
+.LandingCard-container-show{
+    opacity: 1;
+}
+
+.LandingCard-maincontainer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+}
+
+.LandingCard-profile-pic{
+    /* border: solid 1px rgb(89, 188, 245); */
+    border-radius: 50%;
+    height: 80%;
+    width: 33%;
+    display: flex;
+    margin-right: 10%;
+    margin-left: 5%;
+    transition: opacity 0.5s;
+}
+
+.LandingCard-profile-pic:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.LandingCard-profile-info {
+    font-size: 100%;
+}
+
+p{
+    line-height: 10%;
+    text-overflow:inherit;
+}
+
+.LandingCard-profile-info-bio{
+    font-size: 70%;
+    margin-right: 5%;
+}
+
+.LandingCard-resume{
+    position: relative;
+    right:0;
+    background-image: linear-gradient(to bottom right, blue, purple);
+    border-radius: 30%;
+    color: white;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.LandingCard-resume:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.LandingCard-linkedin {
+    background: url(LI-In-Bug.png);
+    background-size: 100% 100%;
+    width: 5vw;
+}
+
+.LandingCard-icons {
+    margin-top: 1vw;
+    display: flex;
+    height: 4vw;
+}
+
+.LandingCard-github {
+    background: url(GitHub-Mark-120px-plus.png);
+    background-size: 100% 100%;
+    width: 4vw;
+}
+
+.LandingCard-icon{
+    cursor:pointer;
+    margin-right: 0.5vw;
+}
+.LandingCard-icon:hover{
+    opacity: 0.7;
+}
