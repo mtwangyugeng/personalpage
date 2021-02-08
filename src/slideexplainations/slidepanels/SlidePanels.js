@@ -49,6 +49,11 @@ export default class SlidePanels extends React.Component{
                 currentpanel: this.state.currentpanel - 1
             })
             this.props.slide_left()
+        } else {
+            this.setState({
+                currentpanel: this.last_index
+            })
+            this.props.go_to_slide(this.last_index)
         }
     }
 
@@ -58,6 +63,11 @@ export default class SlidePanels extends React.Component{
                 currentpanel: this.state.currentpanel + 1
             })
             this.props.slide_right()
+        } else {
+            this.setState({
+                currentpanel: 0
+            })
+            this.props.go_to_slide(0)
         }
     }
 

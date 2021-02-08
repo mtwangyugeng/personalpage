@@ -41,9 +41,9 @@ export default class SlideExplainations extends React.Component{
     render() {
         return ( 
             <div className = "SlideExplainations-container">
+                <div className = "SlideExplainations-title">{this.tt[this.state.currentpanel].title}</div>
                 <SlidePanels contents = {this.tt} go_to_slide = {this.go_to_slide} slide_left = {this.slide_left} slide_right = {this.slide_right}/>
                 <div className = "SlideExplainations-explainations">
-                    <div style = {{fontWeight:"bold"}}>{this.tt[this.state.currentpanel].title}</div>
                     <Tags tags = {this.tt[this.state.currentpanel].tags} />
                     {this.tt[this.state.currentpanel].explaination}
                     <div className = "SlideExplainations-github" onClick = {() => window.open(this.tt[this.state.currentpanel].repository)}></div>

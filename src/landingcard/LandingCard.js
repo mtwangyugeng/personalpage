@@ -66,7 +66,7 @@ export default class Landingcard extends React.Component{
         if(!this.data) return null;
         return (
             <div className = {"LandingCard-maincontainer "}>
-                <img className = "LandingCard-profile-pic" alt = {this.data.login} src = {this.dataimage} onClick = {() => window.open(this.data.html_url)}/>
+                <img className = "LandingCard-profile-pic" alt = {this.data.login} src = {this.dataimage}/>
                 <div className = "LandingCard-profile-info">
                 
                     <h2>{this.data.name}</h2>
