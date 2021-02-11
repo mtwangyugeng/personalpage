@@ -74,8 +74,8 @@ export default class Landingcard extends React.Component{
                     <p>{this.data.location}</p>
                     <div className = "LandingCard-profile-info-bio">{this.data.bio}</div>
                     <div className = "LandingCard-icons">
-                        <div className = {"LandingCard-github LandingCard-icon"} onClick = {this.goto_link(this.props.linkedin)}></div>
-                        <div className = "LandingCard-linkedin LandingCard-icon" onClick = {this.goto_link(this.props.github)}></div>
+                        <div className = {"LandingCard-github LandingCard-icon"} onClick = {this.goto_link(this.props.github)}></div>
+                        <div className = "LandingCard-linkedin LandingCard-icon" onClick = {this.goto_link(this.props.linkedin)}></div>
                         
                         <div className = "LandingCard-resume" onClick = {this.goto_link(this.props.resume)}>Resume</div>
                     </div>
