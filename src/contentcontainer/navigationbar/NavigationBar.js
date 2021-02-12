@@ -7,14 +7,16 @@ export default class NavigationBar extends React.Component{
      * 
      */
     state = {
-        stick: ""
+        stick: "",
+        appear: "appear"
     }
     pos = React.createRef()
-
     render() {
         return ( 
+            <>
+            <div className = {"NavigationBar-top " + this.state.appear} onClick = {this.goto(0)}>↑</div>
             <div ref = {this.pos} className = {"the-bar "  + this.state.stick}>
-                <div className = "NavigationBar-top" onClick = {this.goto(0)}>⬆️Top</div>
+                
                 <div className = "NavigationBar-rightbar">
                     <div className = "NavigationBar-secpos"> 
                         
@@ -26,7 +28,7 @@ export default class NavigationBar extends React.Component{
                     </div>
                     <div style = {{width: this.props.progress}} className = "NavigationBar-progress"></div>
                 </div>
-            </div>
+            </div></>
         );
     }
 
@@ -51,7 +53,18 @@ export default class NavigationBar extends React.Component{
                     stick: "sticky"
                 })
         }
-        window.onscroll = this.stick_it;
+        window.addEventListener('scroll', this.stick_it, false);
+        window.addEventListener('scroll', this.mouse_moved, false);
+        window.addEventListener('mousemove', this.mouse_moved, false);
+    }
+
+    sto = setTimeout(() => this.setState({appear: ""}), 3000);
+    mouse_moved = () => {
+        // console.log("iit moved!!!")
+        this.setState({appear: "appear"})
+        clearTimeout(this.sto);
+        this.sto = setTimeout(() => this.setState({appear: ""}), 3000);
+
     }
 
     stick_it = () =>{

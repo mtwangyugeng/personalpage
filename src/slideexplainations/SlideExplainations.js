@@ -13,7 +13,7 @@ export default class SlideExplainations extends React.Component{
     }
 
     hbeatbox = {
-        title: "Simple Beat-Machine",
+        title: "🎵 Simple Beat-Machine",
         tags: ["javascript", "react.js", "CSS", "HTML"], 
         content: <iframe width="100%" height="100%" src="https://mtwangyugeng.github.io/hbeatbox/" title="hbeatbox"></iframe>,
         repository: "https://github.com/mtwangyugeng/hbeatbox",
@@ -21,7 +21,7 @@ export default class SlideExplainations extends React.Component{
     }
 
     test = {
-        title: "My Personal Webpage",
+        title: "😀 My Personal Webpage",
         tags: ["javascript", "react.js", "CSS", "HTML", 'socket.io', 'REST'], 
         content: <iframe width="100%" height="100%" src="https://mtwangyugeng.github.io/personalpage/" title="personalpage"></iframe>,
         repository: "https://github.com/mtwangyugeng/personalpage",
@@ -29,7 +29,7 @@ export default class SlideExplainations extends React.Component{
     }
 
     pythondatastructures = {
-        title: "Data Structures and Algorithms Reproductions in Python",
+        title: "📚 Data Structures and Algorithms Reproductions in Python",
         tags: ["Python", "Data Structures", 'Algorithm Design'], 
         content: <img height="100vmin" alt = 'pic here' src = "https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png"/>,
         repository: "https://github.com/mtwangyugeng/pythondatastructures",

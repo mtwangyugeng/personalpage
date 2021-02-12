@@ -111,7 +111,7 @@ export default class ContentContainer extends React.Component{
 
     componentDidMount(){
         var secpos = this.secs.map((v) => [v.title, v.pos, Math.floor((v.pos.current.offsetHeight) / (this.pos.current.offsetHeight)*100)])
-        console.log(secpos)
+        // console.log(secpos)
         this.setState({secpos: secpos})
         this.handlescroll()
         window.addEventListener('scroll', this.handlescroll);
@@ -121,8 +121,8 @@ export default class ContentContainer extends React.Component{
 
     handlescroll = () => {
         // this.pos.current.offsetTop + this.pos.current.offsetHeight
-        var neo = Math.floor((window.scrollY) / (this.pos.current.offsetTop + this.pos.current.offsetHeight)*100)
-        // var neo = Math.floor((Math.max(window.scrollY - this.pos.current.offsetTop, 0)) / (this.pos.current.offsetHeight - window.innerHeight)*100)
+        // var neo = Math.floor((window.scrollY) / (this.pos.current.offsetTop + this.pos.current.offsetHeight)*100)
+        var neo = Math.floor((Math.max(window.scrollY - this.pos.current.offsetTop, 0)) / (this.pos.current.offsetHeight - window.innerHeight)*100)
         this.setState({progress: neo})
     }
 
