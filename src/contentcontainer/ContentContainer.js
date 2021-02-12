@@ -7,7 +7,7 @@ import Section from './section/Section'
 import SlideExplainations from '../slideexplainations/SlideExplainations'
 import NameCard from '../namecard/NameCard'
 
-import ConnectionBar from './connectionbar/ConnectionBar';
+import NavigationBar from './navigationbar/NavigationBar';
 
 import ExpCard from '../expcard/ExpCard';
 
@@ -95,7 +95,7 @@ export default class ContentContainer extends React.Component{
     render() {
         return (
             <>
-            <ConnectionBar progress = {this.state.progress + "%"} secpos = {this.state.secpos}/>
+            <NavigationBar progress = {this.state.progress + "%"} secpos = {this.state.secpos}/>
                 <div className = "ContentContainer-container">
                     <div className = "ContentContainer-content"> 
                         <div ref = {this.pos}>

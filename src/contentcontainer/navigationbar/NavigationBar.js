@@ -1,7 +1,7 @@
 import React from 'react';
-import './ConnectionBar.css';
+import './NavigationBar.css';
 
-export default class ConnectionBar extends React.Component{
+export default class NavigationBar extends React.Component{
     /**
      * As a connection bar, I navigate:
      * 
@@ -14,17 +14,17 @@ export default class ConnectionBar extends React.Component{
     render() {
         return ( 
             <div ref = {this.pos} className = {"the-bar "  + this.state.stick}>
-                <div className = "ConnectionBar-top" onClick = {this.goto(0)}>⬆️Top</div>
-                <div className = "ConnectionBar-rightbar">
-                    <div className = "ConnectionBar-secpos"> 
+                <div className = "NavigationBar-top" onClick = {this.goto(0)}>⬆️Top</div>
+                <div className = "NavigationBar-rightbar">
+                    <div className = "NavigationBar-secpos"> 
                         
                         {this.props.secpos.map(([title,y,siz]) => 
-                        <div className = "ConnectionBar-sec" style = {{width: siz + "%"}} onClick = {this.goto(y.current.offsetTop)}>
+                        <div className = "NavigationBar-sec" style = {{width: siz + "%"}} onClick = {this.goto(y.current.offsetTop)}>
                             {title}
                         </div>
                         )}
                     </div>
-                    <div style = {{width: this.props.progress}} className = "ConnectionBar-progress"></div>
+                    <div style = {{width: this.props.progress}} className = "NavigationBar-progress"></div>
                 </div>
             </div>
         );

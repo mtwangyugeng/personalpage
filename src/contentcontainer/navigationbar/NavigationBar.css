@@ -16,18 +16,18 @@
     opacity: 1;
 }
 
-.ConnectionBar-rightbar{
+.NavigationBar-rightbar{
     width: 95vmin;
 }
 
-.ConnectionBar-progress{
+.NavigationBar-progress{
     width: 0%;
     height: 100%;
     background-color: pink;
     transition: 1.5s;
 }
 
-.ConnectionBar-secpos{
+.NavigationBar-secpos{
     position: absolute;
     display: flex;
     width: 95vmin;
@@ -37,14 +37,14 @@
     background-color: rgb(241, 213, 86,0.5);
 }
 
-.ConnectionBar-sec{
+.NavigationBar-sec{
     color: rgb(45, 70, 99);
     transition: 0.5s;
     text-align: center;
     border-right: 1px solid rgba(99, 96, 96, 0.226);
 }
 
-.ConnectionBar-sec:hover{
+.NavigationBar-sec:hover{
     background-color: rgb(52, 130, 248);
     color: wheat;
     cursor: pointer;
@@ -57,11 +57,11 @@
     transform: translateX(-50%);
     top: 0;
     opacity: 1;
-    animation-name: ConnectionBar-bounce;
+    animation-name: NavigationBar-bounce;
     animation-duration: 0.5s;
   }
 
-  @keyframes ConnectionBar-bounce {
+  @keyframes NavigationBar-bounce {
     0%   {top:1vmin;}
     20%  { top:-1vmin;}
     40%  {top:0.5vmin;}
@@ -74,7 +74,7 @@
     padding-top: 5vmin;
   }
 
-.ConnectionBar-top{
+.NavigationBar-top{
     color: rgb(45, 70, 99);
     background-color: tomato;
     transition: 0.5s;
@@ -84,7 +84,7 @@
     font-size: 1.5vmin;
 }
 
-.ConnectionBar-top:hover{
+.NavigationBar-top:hover{
     background-color: rgb(52, 130, 248);
     color: wheat;
     cursor: pointer;
