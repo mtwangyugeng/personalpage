@@ -58,12 +58,12 @@ export default class NavigationBar extends React.Component{
         window.addEventListener('mousemove', this.mouse_moved, false);
     }
 
-    sto = setTimeout(() => this.setState({appear: ""}), 3000);
+    sto = setTimeout(() => this.setState({appear: ""}), 1000);
     mouse_moved = () => {
         // console.log("iit moved!!!")
         this.setState({appear: "appear"})
         clearTimeout(this.sto);
-        this.sto = setTimeout(() => this.setState({appear: ""}), 3000);
+        this.sto = setTimeout(() => this.setState({appear: ""}), 1000);
 
     }
 
