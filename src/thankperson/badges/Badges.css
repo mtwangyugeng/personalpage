@@ -1,0 +1,60 @@
+.ThankPerson-badges-adviser{
+    background-image: url("Badge_adviser.png");
+    width: 15vmin;
+    height: 20vmin;
+    background-position: center;
+    background-size: 30vmin 30vmin;
+    border-radius: 20%;
+    margin-right: 1vmin;
+    position: relative;
+    transition: 1s;
+    opacity: 0;
+}
+
+.ThankPerson-badges-react{
+    background-image: url("Badge_react.png");
+    width: 15vmin;
+    height: 20vmin;
+    background-position: center;
+    background-size: 30vmin 30vmin;
+    border-radius: 20%;
+    position: relative;
+    transition: 1s;
+    opacity: 0;
+}
+
+.ThankPerson-badges-motivator{
+    background-image: url("Badge_motivator.png");
+    width: 15vmin;
+    height: 20vmin;
+    background-position: center;
+    background-size: 30vmin 30vmin;
+    border-radius: 20%;
+    position: relative;
+    transition: 1s;
+    opacity: 0;
+}
+
+.ThankPerson-badges{
+    display: flex;
+    flex: 1;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    /* flex:1; */
+    
+    /* opacity: 0; */
+}
+
+.ThankPerson-badges-show{
+    opacity: 1;
+    animation-name: badges;
+    animation-duration: 1s;  
+    animation-fill-mode: backwards;
+}
+@keyframes badges {
+    from {top: 10vmin; opacity: 0;pointer-events: none;}
+    to {top: 0vmin; opacity: 1; pointer-events: none;}
+  }

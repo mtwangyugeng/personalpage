@@ -6,6 +6,7 @@ import Section from './section/Section'
 
 import SlideExplainations from '../slideexplainations/SlideExplainations'
 import NameCard from '../namecard/NameCard'
+import ThankPerson from '../thankperson/ThankPerson'
 
 import NavigationBar from './navigationbar/NavigationBar';
 
@@ -84,8 +85,7 @@ export default class ContentContainer extends React.Component{
 
     sec3 = {
         title: "Special Thanks",
-        content: <><NameCard login = "epicsteve2"/>
-                    <NameCard login = "JDong3"/></>,
+        content: <><ThankPerson/></>,
         pos: React.createRef()
     }
 
