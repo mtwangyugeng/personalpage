@@ -5,8 +5,10 @@
 }
 
 .ContentContainer-content{
-    padding: 3vw;
+    padding: 3vmin;
     
+     /* padding-left: 3vmin;
+     padding-right: 3vmin; */
 }
 
 .ContentContainer-section{

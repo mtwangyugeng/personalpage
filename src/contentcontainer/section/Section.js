@@ -13,7 +13,7 @@ export default class Section extends React.Component{
 
     render() {
         return (
-            <div ref = {this.props.pos}>
+            <div ref = {this.props.pos} className="Section-container">
                 <div ref = {this.pos} className = {"Section-title " + (this.state.show ? "Section-title-show":"")}>{this.props.title}</div>
                 <div className = {"Section-underline " + (this.state.show ? "Section-underline-show":"")}/>
                 <div className = "Section-content">

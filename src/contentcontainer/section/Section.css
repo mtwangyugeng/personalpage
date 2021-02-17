@@ -24,3 +24,8 @@
     width : 100%;
     height: fit-content;
 }
+
+.Section-container{
+    padding-bottom: 4vmin;
+    /* box-sizing: border-box; */
+}
