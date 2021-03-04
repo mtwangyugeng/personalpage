@@ -17,6 +17,7 @@ export default class ThankPerson extends React.Component{
                 <Badges ba = {['ThankPerson-badges-adviser']}/>
                 <NameCard login = "epicsteve2"/>
             </div>
+            <div> TODO: Kay: need linkedin api</div>
              </>
         );
     }
